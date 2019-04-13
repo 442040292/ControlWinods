@@ -1,0 +1,25 @@
+﻿<Window x:Class="ControlWindows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControlWindows"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="331*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="0">
+            <Button x:Name="button" Content="开始" Click="Button_Click" VerticalAlignment="Top"/>
+            <Button x:Name="button_Copy" Content="结束" Click="Button2_Click" VerticalAlignment="Top"/>
+            <Button x:Name="button1" Content="列出所有窗体" Click="Button1_Click" VerticalAlignment="Top"/>
+            <Button x:Name="button1_Copy" Content="列出所有窗体2" Click="Button3_Click" VerticalAlignment="Top"/>
+        </StackPanel>
+        <ScrollViewer x:Name="sview" Margin="0" Grid.Column="1">
+            <StackPanel x:Name="WindowsPanel"/>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

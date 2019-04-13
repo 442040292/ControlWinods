@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="ControlWindows.Window_Control"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ControlWindows"
+             x:Name="UC"
+             mc:Ignorable="d" d:DesignWidth="800">
+    <Grid Background="#FF73AE69">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="175"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="0" Orientation="Horizontal">
+            <TextBox x:Name="_hWnd"       Height="23" TextWrapping="Wrap" Text="{Binding ElementName=UC,Path=hWnd}" VerticalAlignment="Top" MinWidth="50"/>
+            <TextBox x:Name="_ProcessName"      Height="23" TextWrapping="Wrap" Text="{Binding ElementName=UC,Path=ProcessName}" VerticalAlignment="Top" MinWidth="50"/>
+            <TextBox x:Name="_WindowName"      Height="23" TextWrapping="Wrap" Text="{Binding ElementName=UC,Path=WindowName}" VerticalAlignment="Top" MinWidth="50"/>
+            <TextBox x:Name="_WindowClassName" Height="23" TextWrapping="Wrap" Text="{Binding ElementName=UC,Path=WindowClassName}" VerticalAlignment="Top" MinWidth="50"/>
+        </StackPanel>
+        <StackPanel Margin="0" Grid.Column="1" Orientation="Horizontal">
+            <Button  Content="PName"  Click="GetProcessName_Click"  VerticalAlignment="Top" Width="50"/>
+            <Button  Content="普通"   Click="ControlWindow_Click" Tag="1" VerticalAlignment="Top" Width="42"/>
+            <Button  Content="最小化" Click="ControlWindow_Click" Tag="2" VerticalAlignment="Top" Width="42"/>
+            <Button  Content="最大化" Click="ControlWindow_Click" Tag="3" VerticalAlignment="Top" Width="42"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

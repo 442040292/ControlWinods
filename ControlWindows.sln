@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlWindows", "ControlWindows\ControlWindows.csproj", "{8EAE8164-1FAB-4394-86B6-64905BB887E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeWin32API", "NativeWin32API\NativeWin32API.csproj", "{50854306-8B45-449A-ABE7-2C821730E220}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EAE8164-1FAB-4394-86B6-64905BB887E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EAE8164-1FAB-4394-86B6-64905BB887E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EAE8164-1FAB-4394-86B6-64905BB887E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EAE8164-1FAB-4394-86B6-64905BB887E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50854306-8B45-449A-ABE7-2C821730E220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50854306-8B45-449A-ABE7-2C821730E220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50854306-8B45-449A-ABE7-2C821730E220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50854306-8B45-449A-ABE7-2C821730E220}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D478700C-84E7-4C30-839E-90C1582FD5F2}
+	EndGlobalSection
+EndGlobal
